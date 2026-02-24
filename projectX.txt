@@ -1,0 +1,12 @@
+SCHOOL MANAGEMENT SYSTEM
+Register new students:
+	ID
+	Name
+	Course
+	Phone
+Display Students
+Assign New courses
+Delete
+Store in excel file
+
+present in powerpoint - 4 slides
