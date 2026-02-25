@@ -16,10 +16,10 @@ def add_student():
     student_id = entry_id.get()
     first_name = entry_fname.get()
     last_name = entry_lname.get()
-    courses = entry_courses.get()
+    course = entry_courses.get()
     phone = entry_phone.get()
 
-    if student_id == "" or first_name == "" or last_name == "" or courses == "" or phone == "":
+    if student_id == "" or first_name == "" or last_name == "" or course == "" or phone == "":
         messagebox.showwarning("Input Error", "All fields are required!")
         return
 
@@ -27,7 +27,7 @@ def add_student():
         "ID": student_id,
         "First Name": first_name,
         "Last Name": last_name,
-        "Courses": courses,
+        "Course": course,
         "Phone": phone
     }
 
@@ -60,7 +60,7 @@ def export_students():
                 file.write(f"Student ID: {student['ID']}\n")
                 file.write(f"First Name: {student['First Name']}\n")
                 file.write(f"Last Name: {student['Last Name']}\n")
-                file.write(f"Courses: {student['Courses']}\n")
+                file.write(f"Course: {student['Course']}\n")
                 file.write(f"Phone: {student['Phone']}\n")
                 file.write("-" * 40 + "\n")
 
@@ -84,7 +84,7 @@ tk.Label(root, text="Last Name").pack()
 entry_lname = tk.Entry(root)
 entry_lname.pack()
 
-tk.Label(root, text="Courses (comma separated)").pack()
+tk.Label(root, text="Course").pack()
 entry_courses = tk.Entry(root)
 entry_courses.pack()
 
