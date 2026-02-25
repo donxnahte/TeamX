@@ -1,12 +1,14 @@
 SCHOOL MANAGEMENT SYSTEM
-Register new students:
+The end user should be able to add as many students as they wish, assign courses to the students.
+use tkinter UI
+user should be able to export the added students as .txt
+
+STUDENT DETAILS:
 	ID
-	Name
-	Course
-	Phone
-Display Students
-Assign New courses
-Delete
+	First and Last Name
+	Courses
+	Phone No.
+
 Store in excel file
 
 present in powerpoint - 4 slides
